@@ -1,10 +1,10 @@
 import { Layout, Menu } from "antd";
-import { sidebarItemsGenerator } from "../../utils/sidebarItems";
 import { adminPaths } from "../../routes/admin.routes";
 import { facultyPaths } from "../../routes/faculty.routes";
 import { studentPaths } from "../../routes/student.routes";
 import { useAppSelector } from "../../redux/hooks";
 import { selectCurrentUser } from "../../redux/features/auth/authSlice";
+import sidebarItemsGenerator from "../../utils/sidebarItemsGenerator";
 const { Sider } = Layout;
 const userRole = {
   ADMIN: "admin",

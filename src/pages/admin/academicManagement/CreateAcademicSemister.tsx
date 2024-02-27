@@ -16,7 +16,7 @@ const yearOptions = [0, 1, 2, 3, 4].map((number) => ({
   label: String(currentYear + number),
 }));
 
-const CreateAcademicSemister = () => {
+const CreateAcademicSemester = () => {
   const [addAcademicSemester] = useAddAcademicSemesterMutation();
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
     const toastId = toast.loading("Creating...");
@@ -63,4 +63,4 @@ const CreateAcademicSemister = () => {
   );
 };
 
-export default CreateAcademicSemister;
+export default CreateAcademicSemester;
